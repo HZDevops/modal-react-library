@@ -8,6 +8,8 @@
     "dist",
     "README.md"
   ],
+  "private": false,
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HZDevops/modal-react-library.git"
