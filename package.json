@@ -1,6 +1,7 @@
 {
   "name": "modal-react-library",
   "version": "0.1.0",
+  "author": "HZDevops",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
