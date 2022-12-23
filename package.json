@@ -1,14 +1,13 @@
 {
   "name": "@hz/modal-react-library",
   "version": "0.1.0",
-  "author": "HZDevops",
+  "author": "hzdevops",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
     "dist",
     "README.md"
   ],
-  "private": false,
   "license": "MIT",
   "repository": {
     "type": "git",
