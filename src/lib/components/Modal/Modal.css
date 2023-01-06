@@ -23,7 +23,6 @@
 .modal {
     display: inline-block;
     max-width: 500px;
-    max-height: 49px;
     background: #FFF;  
     border-radius: 8px;
     box-shadow: 0 0 10px #000; 

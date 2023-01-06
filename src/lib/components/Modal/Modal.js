@@ -1,31 +1,22 @@
-import { useState } from "react";
 import "./Modal.css";
 
 function Modal(props) {
-  // State for modal
-  const [isDisplayed, setDisplay] = useState(true);
-
   return (
-    <div>
-      {isDisplayed ? (
-        <div className="modal-bg">
-          <div className="modal">
-            {props.text}
-            <div
-              type="button"
-              className="modalButton"
-              onClick={() => {
-                setDisplay(false);
-              }}
-            >
-              <span className="close">&times;</span>
-            </div>
-          </div>
-        </div>
-      ) : (
-        ""
-      )}
+    <div className="modal-bg">
+      <div className="modal">{props.children}</div>
     </div>
   );
 }
 export default Modal;
+
+export const ModalHeader = (props) => {
+  return <div className="modal-header">{props.children}</div>;
+};
+
+export const ModalBody = (props) => {
+  return <div className="modal-body">{props.children}</div>;
+};
+
+export const ModalFooter = (props) => {
+  return <div className="modal-footer">{props.children}</div>;
+};
