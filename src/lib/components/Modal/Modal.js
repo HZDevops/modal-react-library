@@ -20,3 +20,7 @@ export const ModalBody = (props) => {
 export const ModalFooter = (props) => {
   return <div className="modal-footer">{props.children}</div>;
 };
+
+export const Button = (props) => {
+  return <button onClick={props.onClick}>{props.children}</button>;
+};

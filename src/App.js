@@ -2,8 +2,8 @@ import Modal, {
   ModalHeader,
   ModalBody,
   ModalFooter,
+  Button,
 } from "./lib/components/Modal/Modal";
-import Button from "./lib/components/Button/Button";
 import "./App.css";
 
 function App() {
