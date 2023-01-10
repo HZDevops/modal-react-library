@@ -40,6 +40,10 @@
     }
 }
 
+.modal-header, .modal-body, .modal-footer {
+    margin-block: 15px;
+}
+
 button {
     border: 0;
     outline: 0;
