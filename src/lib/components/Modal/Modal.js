@@ -1,26 +1,39 @@
+import { useState } from "react";
 import "./Modal.css";
 
+/**
+ * @param {*} props
+ * @returns {HTMLElement}
+ */
+
 function Modal(props) {
-  return (
+  // Set the display of the modal
+  const [toggle, setToggle] = useState(true);
+
+  // Pass a function as props to close the modal in the main component
+  const handleUserClick = () => {
+    props.handleResponse();
+  };
+
+  return toggle ? (
     <div className="modal-bg">
-      <div className="modal">{props.children}</div>
+      <div className="modal">
+        <div className="modal-header">{props.title}</div>
+        <div className="modal-body">{props.content}</div>
+        <div className="modal-footer">
+          <button
+            onClick={() => {
+              setToggle(false);
+              handleUserClick();
+            }}
+          >
+            Close
+          </button>
+        </div>
+      </div>
     </div>
+  ) : (
+    ""
   );
 }
 export default Modal;
-
-export const ModalHeader = (props) => {
-  return <div className="modal-header">{props.children}</div>;
-};
-
-export const ModalBody = (props) => {
-  return <div className="modal-body">{props.children}</div>;
-};
-
-export const ModalFooter = (props) => {
-  return <div className="modal-footer">{props.children}</div>;
-};
-
-export const Button = (props) => {
-  return <button onClick={props.onClick}>{props.children}</button>;
-};
