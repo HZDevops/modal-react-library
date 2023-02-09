@@ -17,18 +17,10 @@ import { Modal } from "@hzdevops/modal-react-library/dist"
 
 The modal is invisible by default. To display and close the modal,  you must pass a function to the props handleResponse
 
-import { Modal } from "@hzdevops/modal-react-library/dist"
-
-function MyComponent() {
-    return (
-        <>
-        <Modal content= "content" handleResponse={statusModal} />
-        </>
-    )
-}
-
 ## Exemple
 
+
+```
 import { Modal } from "@hzdevops/modal-react-library/dist"
 
 function MyComponent() {
@@ -47,3 +39,5 @@ function MyComponent() {
         </>
     )
 }
+
+```
