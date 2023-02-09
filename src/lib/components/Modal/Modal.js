@@ -17,11 +17,12 @@ function Modal(props) {
 
   return toggle ? (
     <div className="modal-bg">
-      <div className="modal">
+      <div className="modal" style={props.modalStyle}>
         <div className="modal-header">{props.title}</div>
         <div className="modal-body">{props.content}</div>
         <div className="modal-footer">
           <button
+            style={props.buttonStyle}
             onClick={() => {
               setToggle(false);
               handleUserClick();
