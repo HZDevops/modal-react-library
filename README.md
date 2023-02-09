@@ -12,7 +12,6 @@ npm install modal-react-library
 
 import { Modal } from "@hzdevops/modal-react-library/dist"
 
-<Modal />
 
 ## Opening & Closing Modal
 
@@ -33,6 +32,7 @@ function MyComponent() {
 import { Modal } from "@hzdevops/modal-react-library/dist"
 
 function MyComponent() {
+
     // Modal state initialisation
     const [isOpen, setModal] = useState(false);
     
