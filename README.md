@@ -5,7 +5,7 @@ A library of React modal created using [`modal-react-library`]((https://www.npmj
 ## Installation
 
 ```
-npm install modal-react-library
+npm i @hzdevops/modal-react-library
 ```
 
 ## You need to import component
