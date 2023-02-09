@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Modal />
+      <Modal content="hello" buttonStyle={{ backgroundColor: "red" }} />
     </div>
   );
 }
