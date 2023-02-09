@@ -16,12 +16,13 @@ import { Modal } from "@hzdevops/modal-react-library/dist"
 
 ## Opening & Closing Modal
 
-The modal is invisible by default. To display and close the modal, you must use a local state and pass a function to the props handleResponse to close the modal.
+To display the modal, you must use a local state.
+Then, you need to pass a function to the props handleResponse to close the modal.
 
 # Options
 
-To modify the title and the content of modal you must use the arguments `title={}` and `content={}`.
-To change the appearance of the modal and the button 'Close' you must pass an object to the argument `modalStyle={}`and `buttonStyle={}`
+To modify the modal title and content, you must use the props `title={}` and `content={}`.
+To change the style of the modal and the 'Close' button, you must pass an object to the props `modalStyle={}`and `buttonStyle={}`
 
 ## Exemple
 
@@ -45,4 +46,19 @@ function MyComponent() {
     )
 }
 
+```
+
+list of available style arguments :
+
+```CSS
+backgroundColor,
+fontSize,
+justifyContent,
+width,
+height,
+color,
+boderStyle,
+borderWidth,
+borderColor,
+borderRadius,
 ```
