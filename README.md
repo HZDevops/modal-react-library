@@ -1,6 +1,6 @@
 # modal-react-library
 
-A library of React modal created using [`create-component-lib`](https://www.npmjs.com/package/create-component-lib).
+A library of React modal created using [`modal-react-library`]((https://www.npmjs.com/package/@hzdevops/modal-react-library)).
 
 ## Installation
 
@@ -10,8 +10,10 @@ npm install modal-react-library
 
 ## You need to import component
 
+```
 import { Modal } from "@hzdevops/modal-react-library/dist"
 
+```
 
 ## Opening & Closing Modal
 
