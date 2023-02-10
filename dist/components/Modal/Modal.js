@@ -25,6 +25,7 @@ function Modal(props) {
     className: "modal-bg",
     children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       className: "modal",
+      style: props.modalStyle,
       children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "modal-header",
         children: props.title
@@ -34,6 +35,7 @@ function Modal(props) {
       }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
         className: "modal-footer",
         children: /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+          style: props.buttonStyle,
           onClick: () => {
             setToggle(false);
             handleUserClick();
